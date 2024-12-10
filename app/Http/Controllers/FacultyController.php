@@ -36,6 +36,8 @@ class FacultyController extends Controller
         $faculty = new Faculty();
         $faculty->name = $request->name;
         $faculty->save();
+        toast('New Faculty Added!','success');
+
         return redirect()->route('faculties.index');
         }
 
@@ -68,6 +70,8 @@ class FacultyController extends Controller
         $faculty = Faculty::find($id);
         $faculty->name = $request->name;
         $faculty->update();
+        toast('Faculty updated!','success');
+
         return redirect()->route('faculties.index');
     
     }
@@ -77,8 +81,11 @@ class FacultyController extends Controller
      */
     public function destroy(string $id)
     {
+       
         $faculty = Faculty::find($id);
+        
         $faculty->delete();
+        toast('Faculty deleted !','warning');
         return redirect()->route('faculties.index');
     }
 }

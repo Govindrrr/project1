@@ -55,8 +55,9 @@ class TeacherController extends Controller
         $user->save();
         $user->subjects()->attach($req->subject);
         $user->levels()->attach($req->levels);
-        return "sucessfull person";
-        
+
+        toast('New Teacher Added!','success');
+        return redirect()->back();
     }
 
     /**
@@ -106,6 +107,8 @@ class TeacherController extends Controller
         $user->update();
         $user->subjects()->sync($req->subject);
         $user->levels()->sync($req->levels);
+        toast('Teacher Updated!','success');
+
         return redirect()->route('users.index');
         
     }
@@ -117,6 +120,8 @@ class TeacherController extends Controller
     {
         $user = User::find($id);
         $user->delete();
+        toast('Teacher deleted !','warning');
+
         return redirect()->back();
     }
 

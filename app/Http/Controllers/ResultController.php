@@ -75,6 +75,8 @@ class ResultController extends Controller
         $result->total = 300;
         $result->GPA = $gpa;
         $result->save();
+        toast('New REsult Added!','success');
+
         return redirect()->back();
         
         

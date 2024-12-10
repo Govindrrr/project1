@@ -1,5 +1,5 @@
-<x-user-dashboard>
+<x-app-layout>
     <div class="container">
         
     </div>
-</x-user-dashboard>
+</x-app-layout>

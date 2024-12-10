@@ -25,6 +25,8 @@
 </head>
 
 <body>
+  @include('sweetalert::alert')
+
   <div class="loader"></div>
   <div id="app">
     <div class="main-wrapper main-wrapper-1">
@@ -87,7 +89,6 @@
                                 data-feather="settings"></i><span>Teachers Activities</span></a>
                         <ul class="dropdown-menu">
                             <li><a class="nav-link" href="{{route('submarks.index')}}">Subject marks</a></li>
-                            <li><a class="nav-link" href="{{route('results.index')}}">Results</a></li>
                         </ul>
                     </li>
                   

@@ -83,6 +83,8 @@ class SubjectmarkController extends Controller
             $marks->subject = session('sub');
     
             $marks->save();
+            toast('New marks Added!','success');
+
             return redirect()->back()->with('success', 'Item added successfully.');
         }
     
@@ -122,6 +124,8 @@ class SubjectmarkController extends Controller
    
 
            $marks->update();
+           toast('Marks updated Added!','success');
+
          return redirect()->route('submarks.index');
     }
     /**
@@ -135,6 +139,8 @@ class SubjectmarkController extends Controller
 
         if($mark){
             $mark->delete();
+            toast('Marks Deleted !','warning');
+
             return redirect()->back();
 
         }

@@ -1,4 +1,4 @@
-<x-user-dashboard>
+<x-app-layout>
     <div class="container">
         <form action="{{ route('results.create') }}" method="get">
             <div class="form-row">
@@ -25,4 +25,4 @@
             <button type="submit" class="btn btn-primary">See Results</button>
         </form>
     </div>
-</x-user-dashboard>
+</x-app-layout>

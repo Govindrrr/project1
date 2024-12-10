@@ -7,7 +7,7 @@
 <head>
   <meta charset="UTF-8">
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
-  <title>Otika - Admin Dashboard Template</title>
+  <title>Adarsh secondary School</title>
   <!-- General CSS Files -->
   <link rel="stylesheet" href="/assets/css/app.min.css">
   <!-- Template CSS -->
@@ -16,14 +16,18 @@
   <!-- Custom style CSS -->
   <link rel="stylesheet" href="/assets/css/custom.css">
   <link rel="stylesheet" href="/assets/bundles/jquery-selectric/selectric.css">
-  <link rel='shortcut icon' type='image/x-icon' href='/assets/img/favicon.ico' />
+  <link rel='shortcut icon' type='image/x-icon' href='/assets/img/adarsha.png' />
   <link rel="stylesheet" href="/assets/bundles/select2/dist/css/select2.min.css">
-  <link rel="stylesheet" href="assets/bundles/jquery-selectric/selectric.css">
+  <link rel="stylesheet" href="/assets/bundles/jquery-selectric/selectric.css">
+  <link rel="stylesheet" href="/assets/bundles/fullcalendar/fullcalendar.min.css">
+
 
 
 </head>
 
 <body>
+  @include('sweetalert::alert')
+
   <div class="loader"></div>
   <div id="app">
     <div class="main-wrapper main-wrapper-1">
@@ -182,6 +186,9 @@
   <script src="/assets/js/custom.js"></script>
   <script src="/assets/bundles/select2/dist/js/select2.full.min.js"></script>
   <script src="/assets/bundles/jquery-selectric/jquery.selectric.min.js"></script> 
+  <script src="assets/bundles/fullcalendar/fullcalendar.min.js"></script>
+  <!-- Page Specific JS File -->
+  <script src="assets/js/page/calendar.js"></script>
 
 
 </body>

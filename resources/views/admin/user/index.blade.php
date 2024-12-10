@@ -1,4 +1,4 @@
-<x-user-dashboard>
+<x-app-layout>
     <div>
         <div class="container">
             <form action="{{ route('submarks.create') }}" method="get">
@@ -44,4 +44,4 @@
         </div>
     </div>
 
-</x-user-dashboard>
+</x-app-layout>

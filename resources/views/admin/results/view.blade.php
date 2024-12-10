@@ -1,4 +1,4 @@
-<x-user-dashboard>
+<x-app-layout>
     <class="container">
         <div class="">
             <form action="{{ route('results.store') }}" method="post">
@@ -104,4 +104,4 @@
         </div>
     </div>
 
-</x-user-dashboard>
+</x-app-layout>

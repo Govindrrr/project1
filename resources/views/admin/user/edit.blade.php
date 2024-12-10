@@ -1,4 +1,4 @@
-<x-user-dashboard>
+<x-app-layout>
     <div>
         <div class="container">
             <form action="">
@@ -44,4 +44,4 @@
             </form>
         </div>
     </div>
-</x-user-dashboard>
+</x-app-layout>

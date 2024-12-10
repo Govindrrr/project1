@@ -1,3 +1,20 @@
 <x-app-layout>
-   <h1>Welcome !!</h1>
+   <section class="section">
+      <div class="section-body">
+        <div class="row">
+          <div class="col-12">
+            <div class="card">
+              <div class="card-header">
+                <h4>Calendar</h4>
+              </div>
+              <div class="card-body">
+                <div class="fc-overflow">
+                  <div id="myEvent"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 </x-app-layout>

@@ -1,4 +1,4 @@
-<x-user-dashboard>
+<x-app-layout>
     <div>
         <div class="container">
 
@@ -80,4 +80,4 @@
         </div>
     </div>
 
-</x-user-dashboard>
+</x-app-layout>

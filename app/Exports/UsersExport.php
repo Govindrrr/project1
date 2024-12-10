@@ -13,6 +13,8 @@ class UsersExport implements FromCollection, WithHeadings
     */
     public function collection()
     {
+        toast('New Faculty Added!','success');
+
         return Result::all();
     }
     public function headings(): array

@@ -15,9 +15,12 @@ class ImportExportController extends Controller
             'image'=>'required|max:2048'
         ]);
         Excel::import(new UsersImport,$req->file('image'));
+        toast('New file imported !','success');
+
         return redirect()->back();
     }
     public function export(){
         return Excel::download(new UsersExport, 'users.xlsx');
+        toast('File exported!','success');
     }
 }

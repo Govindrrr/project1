@@ -43,6 +43,7 @@ class SubjectController extends Controller
         $subject->save();
 
         $subject->faculties()->attach($request->faculty);
+        toast('New Subject Added!','success');
 
         return redirect()->back();
 

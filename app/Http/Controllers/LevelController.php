@@ -42,6 +42,7 @@ class LevelController extends Controller
         $level->save();
 
         $level->subjects()->attach($request->subject);
+        toast('New Class Added!','success');
 
         return redirect()->back();
     }
@@ -81,6 +82,7 @@ class LevelController extends Controller
         $level->update();
 
         $level->subjects()->sync($request->subject);
+        toast('Class updated','success');
 
         return redirect()->route('levels.index');
     }
